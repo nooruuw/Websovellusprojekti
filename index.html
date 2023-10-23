@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-compatibile" content="IE=edge">
+    <title> Nooran </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/812d7e7594.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section id="banner">
+        <div class="banneri-teksti">
+            <h1>Welcome To My Craft Gallery</h1>
+            <p>Here you will see my crafts and DIY stuff</p>
+            <div class="banneri-nappi">
+                <a href="#survey"><span></span>Answer the survey</a>
+                <a href="#contactMe"><span></span>Contact me</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME PAGE</a></li>
+                <li><a href="#aboutMeee">ABOUT ME</a></li>
+                <li><a href="#gallery1">WHAT I HAVE KNITTED?</a></li>
+                <li><a href="#gallery2">WHAT I HAVE CROCHETED?</a></li>
+                <li><a href="#materials">MATERIALS FOR CROCHETED ANIMALS</a></li>
+                <li><a href="#gallery3">DIY PROJETS</a></li>
+                <li><a href="#survey">LITTLE SURVEY TO YOU</a></li>
+                <li><a href="#contactMe">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menunappi">
+        <img src="images/menuu.png" id="menu">
+    </div>
+
+
+    <!--What Do I Do-->
+    <section id="aboutMeee">
+        <div class="title-text hidden-from-bottom">
+            <img src="images/sydämet.png" id="sydämet">
+            <h1>What Do I Do?</h1>
+        </div>
+        <div class="aboutMe-box">
+            <div class="aboutMe hidden-from-side">
+                <h1><img src="images/timantti.PNG" id="sydämet"> Knitting</h1>
+                <div class="aboutMe-lisää">
+                    <ul>
+                        <li>Wool socks</li>
+                        <li>Wool beanies</li>
+                    </ul>
+                </div>
+                <h1><img src="images/timantti.PNG" id="sydämet"> Crocheting
+                </h1>
+                <div class="aboutMe-lisää">
+                    <ul>
+                        <li>Teddy animals</li>
+                        <li>Tiny mascots</li>
+                    </ul>
+                </div>
+
+                <h1><img src="images/timantti.PNG" id="sydämet"> DIY
+                </h1>
+                <div class="aboutMe-lisää">
+                    <ul>
+                        <li>Coffee table</li>
+                        <li>Macrame</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aboutMe-img">
+                <img src="images/keltainen2.jpg">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--  Gallery  -->
+
+    <section id="gallery1">
+        <div class="title-text hidden-from-bottom">
+            <img src="images/sydämet.png" id="sydämet">
+            <h1>What I Have Knitted?</h1>
+        </div>
+        <div class="gallery-box">
+            <div class="picture">
+                <img src="images/violett2i.jpg" alt="Image 1" onclick="openImage('images/violett2i.jpg')"
+                    class="hover-shadow">
+
+                <img src="images/valkoinen2.jpg" alt="Image 2" onclick="openImage('images/valkoinen2.jpg')"
+                    class="hover-shadow">
+
+                <img src="images/keltainen3.jpg" alt="Image 3" onclick="openImage('images/keltainen3.jpg')"
+                    class="hover-shadow">
+
+                <img src="images/pipo.jpg" alt="Image 2" onclick="openImage('images/pipo.jpg')" class="hover-shadow">
+
+                <img src="images/punainen.jpg" alt="Image 3" onclick="openImage('images/punainen.jpg')"
+                    class="hover-shadow">
+
+                <img src="images/lapaset.jpg" alt="Image 3" onclick="openImage('images/lapaset.jpg')"
+                    class="hover-shadow">
+            </div>
+        </div>
+        <div id="overlay">
+            <span id="close-btn" onclick="closeImage()">&times;</span>
+            <span id="prev-btn" class="nav-btn" onclick="navigateGallery(-1)">&#10094;</span>
+            <span id="next-btn" class="nav-btn" onclick="navigateGallery(1)">&#10095;</span>
+            <img id="overlay-img" src="">
+        </div>
+    </section>
+
+    <section id="gallery2">
+        <div class="title-text hidden-from-bottom">
+            <img src="images/sydämet.png" id="sydämet">
+            <h1>What I Have Crocheted?</h1>
+        </div>
+        <div class="gallery-box">
+            <div class="picture">
+                <img src="images/kuva1.jpg" alt="Image 1" onclick="openImage('images/kuva1.jpg')" class="hover-shadow">
+
+                <img src="images/kuva2.jpg" alt="Image 2" onclick="openImage('images/kuva2.jpg')" class="hover-shadow">
+
+                <img src="images/kuva3.jpg" alt="Image 3" onclick="openImage('images/kuva3.jpg')" class="hover-shadow">
+
+                <img src="images/kuva4.jpg" alt="Image 2" onclick="openImage('images/kuva4.jpg')" class="hover-shadow">
+
+                <img src="images/kuva5.jpg" alt="Image 3" onclick="openImage('images/kuva5.jpg')" class="hover-shadow">
+
+                <img src="images/kuva6.jpg" alt="Image 3" onclick="openImage('images/kuva6.jpg')" class="hover-shadow">
+
+                <img src="images/kuva7.jpg" alt="Image 1" onclick="openImage('images/kuva7.jpg')" class="hover-shadow">
+
+                <img src="images/kuva8.jpeg" alt="Image 2" onclick="openImage('images/kuva8.jpeg')"
+                    class="hover-shadow">
+
+                <img src="images/kuva9.jpeg" alt="Image 3" onclick="openImage('images/kuva9.jpeg')"
+                    class="hover-shadow">
+
+                <img src="images/kuva10.jpeg" alt="Image 2" onclick="openImage('images/kuva10.jpeg')"
+                    class="hover-shadow">
+
+                <img src="images/kuva11 (2).jpeg" alt="Image 3" onclick="openImage('images/kuva11 (2).jpeg')"
+                    class="hover-shadow">
+
+                <img src="images/kuva12.jpg" alt="Image 3" onclick="openImage('images/kuva12.jpg')"
+                    class="hover-shadow">
+
+                <img src="images/kuva13_2.jpg" alt="Image 3" onclick="openImage('images/kuva13_2.jpg')"
+                    class="hover-shadow">
+
+                <img src="images/kuva14.jpg" alt="Image 2" onclick="openImage('images/kuva14.jpg')"
+                    class="hover-shadow">
+
+                <img src="images/kuva16.jpg" alt="Image 3" onclick="openImage('images/kuva16.jpg')"
+                    class="hover-shadow">
+
+                <img src="images/kilppari7.jpg" alt="Image 2" onclick="openImage('images/kilppari7.jpg')"
+                    class="hover-shadow">
+
+                <div class="valo"></div>
+            </div>
+        </div>
+        <div id="overlay">
+            <span id="close-btn" onclick="closeImage()">&times;</span>
+            <span id="prev-btn" class="nav-btn" onclick="navigateGallery(-1)">&#10094;</span>
+            <span id="next-btn" class="nav-btn" onclick="navigateGallery(1)">&#10095;</span>
+            <img id="overlay-img" src="">
+        </div>
+    </section>
+
+    <!----materials---->
+
+    <section id="materials">
+        <div class="title-text hidden-from-bottom">
+            <img src="images/sydämet.png" id="sydämet">
+            <h1>Materials For Crocheted Animals</h1>
+        </div>
+        <div class="material">
+            <div class="material-table-left hidden-from-side">
+                <table>
+                    <tr>
+                        <th>Soft yarn</th>
+                        <th>Safety eyes</th>
+                        <th>Crochet hook</th>
+                        <th>Other stuff</th>
+                    </tr>
+                    <tr>
+                        <td>Honey Bynny</td>
+                        <td>12mm</td>
+                        <td>5mm</td>
+                        <td>Yarn needle</td>
+                    </tr>
+                    <tr>
+                        <td>Baby Snuggle</td>
+                        <td>15mm</td>
+                        <td>6mm</td>
+                        <td>Poly fill</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Stitch markers</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Scissors</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="material-photo-right">
+                <img src="images/materials.jpg" alt="materials">
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section id="gallery3">
+        <div class="title-text hidden-from-bottom">
+            <img src="images/sydämet.png" id="sydämet">
+            <h1>DIY Projects</h1>
+        </div>
+        <div class="gallery-box">
+            <div class="picture">
+                <img src="images/wooden coffee table1.jpg" alt="Image 3"
+                    onclick="openImage('images/wooden coffee table1.jpg')" class="hover-shadow">
+
+                <img src="images/kuva30.jpg" alt="Image 1" onclick="openImage('images/kuva30.jpg')"
+                    class="hover-shadow">
+
+                <img src="images/macrame bauble2.jpg" alt="Image 2" onclick="openImage('images/macrame bauble2.jpg')"
+                    class="hover-shadow">
+            </div>
+        </div>
+
+        <div id="overlay">
+            <span id="close-btn" onclick="closeImage()">&times;</span>
+            <span id="prev-btn" class="nav-btn" onclick="navigateGallery(-1)">&#10094;</span>
+            <span id="next-btn" class="nav-btn" onclick="navigateGallery(1)">&#10095;</span>
+            <img id="overlay-img" src="">
+        </div>
+    </section>
+
+
+
+
+
+    <!-------Survey-------->
+
+    <section id="survey">
+        <div class="title-text hidden-from-bottom">
+            <img src="images/sydämet.png" id="sydämet">
+            <h1>Little Survey To You</h1>
+        </div>
+        <div>
+            <div class="survey-box hidden-from-side">
+                <form name="survey-form">
+                    <div>
+                        <p>Which of the knitted ones was your favourite?</p>
+                        <div class="choices">
+
+                            <p>
+                                <input type="checkbox" id="knitted1" name="PurpleSocks">
+                                <label for="knitted1"> purple socks</label><br>
+                                <input type="checkbox" id="knitted2" name="White socks">
+                                <label for="knitted2"> white socks</label><br>
+                                <input type="checkbox" id="knitted3" name="Yellow socks">
+                                <label for="knitted3"> yellow socks</label><br>
+                                <input type="checkbox" id="knitted4" name="Beanie">
+                                <label for="knitted4"> beanie</label><br>
+                                <input type="checkbox" id="knitted5" name="Red socks">
+                                <label for="knitted5"> red socks</label><br>
+                                <input type="checkbox" id="knitted6" name="Mittens">
+                                <label for="knitted6"> mittens</label><br>
+                            </p>
+                        </div>
+
+
+                        <p>Which of the DIY ones was your favourite?</p>
+                        <div class="choices">
+                            <p><input type="checkbox" id="diy1" name="Coffee table">
+                                <label for="diy1"> wooden coffee table</label><br>
+                                <input type="checkbox" id="diy2" name="New coverings">
+                                <label for="diy2"> new coverings for cushions</label><br>
+                                <input type="checkbox" id="diy3" name="Macrame bauble">
+                                <label for="diy3"> macrame bauble</label><br>
+                            </p>
+                        </div>
+
+
+                        <p>Choose the cutest animal?</p>
+                        <div>
+                            <select id="selectCutest" class="cutestAnimal" name="Cutest">
+                                <option>Choose the animal</option>
+                            </select>
+                        </div>
+
+
+                        <p>What should I do next?</p>
+                        <div>
+                            <input type="text" id="next" name="Next" value="" placeholder=" Bunny..">
+                        </div>
+                        <button type="submit" id="survey-submit">Submit</button>
+                        <span id="msg"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!--contactMe-->
+
+    <section id="contactMe">
+        <div class="title-text hidden-from-bottom">
+            <img src="images/sydämet.png" id="sydämet">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact hidden-from-side">
+            <div class="contactForm"><i class="fa-solid fa-envelope fa-xl" style="color: #7c5656;"></i>
+                <form name="contact-form">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="text" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message.." required></textarea>
+                    <button type="submit" id="contact-submit">Submit</button>
+                    <span id="msg2"></span>
+                </form>
+            </div>
+    </section>
+
+    <div class="thankYou">
+        <p>Thank You For Visiting My Gallery! <i class="fa-solid fa-heart" style="color:#eedddd"></i>:Noora </p>
+        <div class="location">
+            <p><i class="fa-solid fa-location-dot fa-xl" style="color: #f0cdd8;"></i> FINLAND / OULU /
+            <p id="current-time"></p>
+            </p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl"
+                    style="color: #f0cdd8;"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-xl"
+                    style="color: #f0cdd8;"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter fa-xl"
+                    style="color: #f0cdd8;"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"
+                    style="color: #eac3d0;"></i></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

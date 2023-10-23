@@ -1,0 +1,812 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section #aboutMeee #gallery1 #gallery2 #gallery3 #query #contactMe {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+#banner {
+    background-image: url(images/kilppari4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh
+}
+
+.banneri-teksti {
+    text-align: center;
+    color: #9b7575;
+    padding-top: 60px
+}
+
+.banneri-teksti h1 {
+    font-size: 100px
+}
+
+.banneri-teksti p {
+    font-size: 25px;
+    font-style: italic;
+    color: #5e4444
+}
+
+.banneri-nappi {
+    margin: 20px auto 0;
+}
+
+.banneri-nappi a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #664646;
+    border: .5px solid #664646;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+    border-radius: 10px;
+}
+
+.banneri-nappi a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffffb0;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.banneri-nappi a:hover span {
+    width: 100%
+}
+
+.banneri-nappi a:hover {
+    color: #2b1d1d;
+}
+
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #a07777;
+    z-index: 1;
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #e0c9c9;
+    font-style: italic;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+
+}
+
+#menunappi {
+    width: 0px;
+    height: 0px;
+    background: #a07777;
+    text-align: center;
+    position: fixed;
+    right: 80px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menunappi img {
+    width: 40px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 770px) {
+    .banneri-teksti h1 {
+        font-size: 44px
+    }
+
+    .banneri-nappi a {
+        display: block;
+        margin: 20px auto;
+    }
+
+}
+
+/*--what do I do--*/
+
+#aboutMeee {
+    width: 100%;
+    padding: 70px 0;
+    margin-bottom: 100px;
+}
+
+/*--liuku alhaalta--*/
+.hidden-from-bottom {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100px);
+    transition: all 1.5s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden-from-bottom {
+        transition: none;
+    }
+}
+
+.show-from-bottom {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+/*liuku sivulta*/
+.hidden-from-side {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100px);
+    transition: all 3s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden-from-side {
+        transition: none;
+    }
+}
+
+.show-from-side {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+    color: #917a7a;
+
+}
+
+.title-text h1 {
+    font-size: 50px
+}
+
+.aboutMe-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutMe {
+    flex-basis: 50%;
+}
+
+
+.aboutMe-img {
+    flex-basis: 50%;
+    margin: auto;
+    margin-top: 70px;
+
+}
+
+.aboutMe-img {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.aboutMe-img img {
+    width: 90%;
+    border-radius: 35px;
+}
+
+.aboutMe h1 {
+    /*text-align: left;*/
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 1;
+    display: inline-block;
+    color: #b69191;
+    margin: 0;
+    margin-top: 60px;
+    vertical-align: top;
+}
+
+
+ul {
+    list-style-type: circle;
+    /*list-style-position: inside;*/
+    margin-left: 20px;
+    color: #967979;
+    z-index: 1;
+    display: inline-block;
+    margin: 0;
+}
+
+@media screen and (max-width: 770px) {
+    .title-text h1 {
+        font-size: 35px
+    }
+
+    .aboutMe {
+        flex-basis: 100%
+    }
+
+    .aboutMe-img {
+        flex-basis: 90%;
+        margin: auto;
+        padding-top: 70px;
+    }
+}
+
+
+/*------- kuvan pomppaus------ */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.849);
+    z-index: 999;
+
+}
+
+#overlay-img {
+    max-width: 90%;
+    border-radius: 20px;
+    max-height: 90%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(20, 18, 18, 0.308), 0 6px 20px 0 rgba(0, 0, 0, 0.438);
+}
+
+
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 46px;
+}
+
+#close-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+/* ------navigation buttons----- */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1001;
+}
+
+#prev-btn {
+    left: 20px;
+}
+
+#next-btn {
+    right: 20px;
+}
+
+
+/*--------gallery knit-------*/
+
+#gallery1 {
+    width: 100%;
+    padding: 70px 0px;
+    background: #ffffff;
+}
+
+#gallery2 {
+    width: 100%;
+    padding: 70px 0;
+}
+
+#gallery3 {
+    width: 100%;
+    padding: 70px 0;
+    background: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 200px; 
+}
+
+.gallery-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.picture {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 60px;
+
+}
+
+.picture img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+@media screen and (max-width: 770px) {
+    .gallery-box {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/*------materials------*/
+
+#materials {
+    padding: 70px 0;
+    width: 100%;
+    background-color: #ffffff7e;
+    margin-bottom: 200px;
+    flex-basis: 50%;
+}
+
+.material {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.material-photo-right {
+    flex-basis: 50%;
+    margin: auto;
+    margin-top: 70px;
+
+}
+
+.material-photo-right img {
+    width: 90%;
+    border-radius: 35px;
+}
+
+
+@media screen and (max-width: 770px) {
+    .title-text h1 {
+        font-size: 35px
+    }
+
+    .aboutMe {
+        flex-basis: 100%
+    }
+
+    .aboutMe-img {
+        flex-basis: 90%;
+        margin: auto;
+        padding-top: 70px;
+    }
+}
+
+.material-table-left {
+    flex-basis: 35%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+
+table {
+    width: 100%;
+    padding-top: 40px;
+    color: #523131;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+td,
+th {
+    border: 1px solid #e0cfcf;
+    text-align: center;
+    padding: 8px;
+    border-radius: 9px;
+    background-color: #f1d3ddce;
+}
+
+tr:nth-child(even) {
+    background-color: #2f82c5dc;
+}
+
+@media screen and (max-width: 770px) {
+    #materials{
+        margin-bottom: 5px;
+    }
+    
+    .material-table-left {
+        flex-basis: 100%
+    }
+
+    .material-photo-right {
+        flex-basis: 90%;
+        margin: auto;
+        padding-top: 70px;
+    }
+}
+
+/*--------survey-------*/
+
+#survey {
+    padding: 70px 0;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: left;
+    justify-content: space-between;
+}
+
+#survey h1 {
+    color: #866767;
+    padding-bottom: 10px;
+}
+
+/*.survey-box {
+    width: 50%;
+    margin-left: 30%;
+    text-align: left;
+    display: flex;
+    max-width: 600px;
+    /* margin-left: 15%;
+    float: left;
+    flex-basis: 50%;*
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+*/
+
+.survey-box {
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 80vh;
+}
+
+.survey-box p {
+    font-size: 25px;
+    color: #815959;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.survey-box form {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 30px;
+    color: #573e3e
+}
+
+.survey-box .choices p {
+    padding-top: 5px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    color: #7e6464;
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    background-color: #e4d4d4;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-color: #836969;
+    border-radius: 4px;
+    position: relative;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+/* Muutetaan valintamerkki näkyväksi, kun ruutu on valittu */
+input[type="checkbox"]:checked::before {
+    visibility: visible;
+}
+
+input[type=checkbox]:hover {
+    box-shadow: 0 4px 8px 0 rgba(20, 18, 18, 0.308), 0 6px 20px 0 rgba(0, 0, 0, 0.438);
+}
+
+
+/*Choose the cutest animal*/
+
+.cutestAnimal {
+    width: 300px;
+    padding: 11px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e4d4d4;
+    color: #000;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+
+/*what should I do next*/
+input[type="text"] {
+    width: 300px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #e4d4d4;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    outline: none;
+    margin: 15px 0;
+    font-size: 15px;
+    padding: 15px;
+}
+
+input[type="text"]::before {
+    content: "";
+    display: inline-block;
+    background-color: #836969;
+    border-radius: 1px;
+    position: relative;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+
+/* Lähetä-nappi */
+button[type="submit"] {
+    background-color: #855c5c;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 2%;
+    display: block;
+}
+
+.survey-image {
+    position: absolute;
+    right: 30px;
+}
+
+.survey-image img {
+    width: 600px;
+    height: auto;
+    padding-right: 10px;
+    padding-top: 30px;
+    margin: auto;
+}
+
+#msg {
+    color: #3bb8c9;
+}
+
+
+@media (max-width: 770px) {
+    .survey-box {
+        width: 80%;
+        padding-left: 4px;
+    }
+
+    .survey-box form button {
+        margin-bottom: 10px;
+    }
+    .survey-image {
+        width: 100%;
+        flex-basis: 90%;
+        margin: auto;
+        padding-top: 70px;
+    }
+    #msg{
+        padding-top: 10px;
+    }
+}
+
+
+
+/*--------contact me-------*/
+
+#contactMe {
+    padding: 70px 0;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: left;
+    margin: 0 auto;
+    float: left;
+    padding-bottom: 5%;
+}
+
+#contactMe h1 {
+    color: #9e8181;
+}
+
+.contactForm i {
+    padding-bottom: 10px;
+    margin-right: 95%;
+}
+
+.contact {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-around;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.contactForm input[type=text],
+ textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    margin: 15px 0;
+    font-size: 15px;
+    background-color:#e4d4d4; 
+}
+
+
+.contactForm button[type=submit] {
+    background-color: #866363;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+button[type=submit]:hover {
+    background-color: #866363;
+    box-shadow: 0 4px 8px 0 rgba(20, 18, 18, 0.308), 0 6px 20px 0 rgba(0, 0, 0, 0.438);
+}
+
+@media screen and (max-width: 770px) {
+    .contact {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        flex-basis: 100%;
+    }
+    #contactMe {
+        padding-bottom: 15%;
+    }
+    #msg2{
+        padding-top: 13px;
+    }
+}
+
+#msg2 {
+    color: #42bdce;
+}
+
+.thankYou {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #977878;
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.thankYou p {
+    margin: auto;
+    font-size: 20px;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding-top: 31px;
+}
+
+.thankYou i {
+    color: #bd8787;
+}
+
+.socialMedia {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.socialMedia a {
+    color: #97787800;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.socialMedia a:hover {
+    transform: translateY(-10px);
+}
