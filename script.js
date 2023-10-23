@@ -173,6 +173,10 @@ document.getElementById('survey-submit').addEventListener('click', function (e) 
             })
             .catch(error => {
                 console.error('Error!', error.message);
+                msg2.innerHTML = "Error occurred while sending the message!";
+                setTimeout(function () {
+                    msg.innerHTML = "";
+                }, 5000);
             });
     } else {
         // Jos käyttäjä painoi "Cancel", älä tee mitään
