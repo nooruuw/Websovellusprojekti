@@ -30,7 +30,7 @@
 ```
 1/5 script.js sivulla käytetty timeria, rivi 169 ja 200, viesti näkyy sivulla 5 sekuntia
 2/5 script.js sivulla käytetty fetch rivillä 166 ja 197 
-3/5 script.js sivulla, nykyinen kellonaika,
+3/5 script.js ei näy, mutta kyselyiden vastaukset tulevat minulle näkyviin erilliseen google sheet- taulukkoon, alhaalla kuva siitä.
 4/5 script.js sivulla catch
 5/5 script.js sivulla riviltä 145 alkaa kyselyjen vastausten lähetys. kummassakin käytetty fetch-metodia lähettämään kyselyjen vastaukset, niissä myös käytetty promise-käsittelyä. Käyttäjäkokemuksen parantaminen: riveillä 168, 199, 207, 217 kerrotaan käyttäjälle onnistuiko kyselyjen lähetykset, oliko sähköpostiosoite validi. lisäksi pomppaa näkyviin erillinen boksi jossa kysytään haluaako käyttäjä varmasti lähettää vastaukset.
 ```
