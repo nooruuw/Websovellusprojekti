@@ -36,5 +36,6 @@
 ```
 
 
-# kyselyiden vastaukset tulevat minulle tällaiseen Google Sheets taulukkoon:
+# kyselyiden vastaukset tulevat minulle tällaiseen Google Sheets taulukkoon ja koodi alla:
 ![taulukko](https://github.com/nooruuw/Websovellusprojekti/assets/123464212/7af27d9d-1ca0-4c2e-956e-904da4dea311)
+![image](https://github.com/nooruuw/Websovellusprojekti/assets/123464212/cb3ec118-326d-4346-9ab1-3dfb1de38424)
